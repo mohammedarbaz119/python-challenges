@@ -1,6 +1,11 @@
 # l = []
 # nl = list()
 # list of fruits
+from __future__ import print_function
+from joblib import PrintTime
+from zmq import THREAD_PRIORITY
+
+
 fruits = ['banana', 'orange', 'mango', 'lemon']
 vegetables = ['Tomato', 'Potato', 'Cabbage',
               'Onion', 'Carrot']      # list of vegetables
@@ -18,3 +23,28 @@ print(len(l5))
 print(f"{l5[0]} {l5[int((0+len(l5))/2)]} {l5[len(l5)-1]}")
 comapnies = ["Facebook", "Google", "Microsoft",
              "Apple", "IBM", "Oracle", "Amazon"]
+print(
+    f"{comapnies[0]} {comapnies[int((0+len(comapnies))/2)]} {comapnies[len(comapnies)-1]}")
+print(len(comapnies))
+comapnies[2] = "new comapny"
+print(comapnies)
+comapnies.append("anene")
+print(comapnies)
+comapnies[0] = comapnies[0].upper()
+print(comapnies)
+print('# '.join(comapnies))
+comapnies.sort()
+comapnies.reverse()
+print(comapnies)
+print(comapnies[0:3])
+print(comapnies[-3:])
+comapnies.pop(0)
+print(comapnies)
+comapnies.clear()
+del comapnies
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node', 'Express', 'MongoDB']
+third = front_end+back_end
+print(third)
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+print(max(ages))
