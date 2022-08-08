@@ -48,3 +48,47 @@ from cmath import pi
 # def capitalize(l):
 #     for x in l:
 #         print(x.upper())
+
+# def addit(l, c):
+#     l.append(c)
+#     print(l)
+
+
+# addit([1, 2, 3, 4], 5)
+
+# def remit(l, c):
+#     l.remove(c)
+#     print(l)
+
+
+# remit([1, 2, 3, 4], 3)
+
+# def sumofno(n):
+#     s = 0
+#     for i in range(0, n+1):
+#         s += i
+#     print(s)
+
+
+# sumofno(100)
+
+# def sumofodd(n):
+#     s = 0
+#     for i in range(0, n+1):
+#         if(i % 2 != 0):
+#             s += i
+#     print(s)
+
+
+# sumofodd(100)
+
+
+# def sumofeven(n):
+#     s = 0
+#     for i in range(0, n+1):
+#         if(i % 2 == 0):
+#             s += i
+#     print(s)
+
+
+# sumofeven(100)
