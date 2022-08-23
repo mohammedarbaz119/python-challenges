@@ -18,7 +18,7 @@ print(complex)
 
 
 # per()
-a = "30"
+a = "30"A:
 b = "days"
 c = "of"
 d = "python"

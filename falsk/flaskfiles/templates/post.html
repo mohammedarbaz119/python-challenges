@@ -1,0 +1,14 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <h1 style="transform: translateX(20%);font-size:30px;">Text Analyzer</h1>
+  <form action="/result" method="POST" style="transform:translateX(20%)">
+    <div >
+      <textarea rows="20" cols="50" name="content" style="font-size: 20px;" autofocus></textarea>
+    </div>
+    <div>
+      <input type="submit" class="btn" value="Process Text" style="font-size: 20px;border:1px solid orange;background-color:orange;" />
+    </div>
+  </form>
+</div>
+
+{% endblock %}

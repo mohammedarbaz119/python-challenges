@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+   
+    background-color: aquamarine;
+font-size: 30px;
+}
+.menucontainer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.menucontainer div a {
+    text-decoration: none;
+    color: black;
+}
+.menucontainer ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+   margin-right: auto;
+   margin: 20px;
+}

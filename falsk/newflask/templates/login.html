@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+<style>
+    form{
+        transform: translate(300px,200px);
+        display: flex;
+        flex-direction: column;
+    }
+    input,label,button{
+max-width: max-content;
+font-size: 25px;
+    }
+</style>
+<form action="/login" method="post">
+
+    <label for="name">Username</label>
+    <input type="text" name="name" placeholder="enter your username">
+    <label for="pass" >Password</label>
+    <input type="password"  name="pass"placeholder="enter your password">
+    <button type="submit">submit</button>
+    <p style="color:red;">{{error}}</p>
+</form>
+{% endblock %}

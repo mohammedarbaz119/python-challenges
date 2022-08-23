@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}{% block content %}
+<h1 style="font-size: 35px;">text analyser</h1>
+<p style="font-size: 30px;">Total no of words: {{cool}}</p>
+<p style="font-size: 30px;">Total no of characters:{{char}}</p>
+<style>
+    th,td{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+</style>
+<table style="border: 2px solid black;font-size: 30px;padding: 10px 30px 0px 30px;">
+    <tr><th>word</th>
+    <th>count</th></tr>
+    {% for n,c in dict.items() %}
+    <tr><td>{{n}}</td>
+    <td>{{c}}</td></tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
