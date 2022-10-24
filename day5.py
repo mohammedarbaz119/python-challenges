@@ -1,9 +1,7 @@
 # l = []
 # nl = list()
 # list of fruits
-from __future__ import print_function
-from joblib import PrintTime
-from zmq import THREAD_PRIORITY
+
 
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -37,6 +35,7 @@ comapnies.sort()
 comapnies.reverse()
 print(comapnies)
 print(comapnies[0:3])
+print('\n')
 print(comapnies[-3:])
 comapnies.pop(0)
 print(comapnies)
@@ -48,3 +47,6 @@ third = front_end+back_end
 print(third)
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 print(max(ages))
+a = '10.0'
+print(int(a))
+
