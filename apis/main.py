@@ -7,3 +7,8 @@ app = FastAPI()
 @app.get('/')
 async def puchet():
     return "i am arbaz"
+
+
+@app.post('/')
+def puchi():
+    return {"name": 'arbaz'}
