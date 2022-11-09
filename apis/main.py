@@ -1,5 +1,5 @@
 from unittest import async_case
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 
 app = FastAPI()
 
@@ -9,6 +9,6 @@ async def puchet():
     return "i am arbaz"
 
 
-@app.post('/')
-def puchi():
-    return {"name": 'arbaz'}
+@app.post('/{puchi}')
+def puchi(puchi: int):
+    return {puchi}
